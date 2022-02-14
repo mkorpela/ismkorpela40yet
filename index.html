@@ -27,9 +27,19 @@
         }
 
         .ps {
-            font-size: 1.5em;
             margin-top: 2rem;
             text-align: center;
+            animation: color-change 1s infinite;
+            margin-left: 4rem;
+            margin-right: 4rem;
+            height: 200px;
+            max-width: 550px;
+        }
+
+        @keyframes color-change {
+          0% { color: red; font-size: 1.5em; }
+          50% { color: blue; font-size: 1.4em; }
+          100% { color: green; font-size: 1.5em}
         }
     </style>
 </head>
